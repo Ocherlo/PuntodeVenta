@@ -31,7 +31,7 @@ public class SQLite_OpenHelper extends SQLiteOpenHelper {
     public void insertar(String nom,String cor,String pas){
         ContentValues valores=new ContentValues();
         valores.put("Nombre",nom);
-        valores.put("Correo",nom);
+        valores.put("Correo",cor);
         valores.put("Password",pas);
         this.getWritableDatabase().insert("usuarios",null,valores);
     }
@@ -42,5 +42,12 @@ public class SQLite_OpenHelper extends SQLiteOpenHelper {
         mcursor=this.getReadableDatabase().query("usuarios",new String[]{"_ID","Nombre","Correo","Password"},"Nombre like '"+usu+"'and Password like '"+pas+"'",null,null,null,null);
 
         return mcursor;
+    }
+    //VALIDAR USUARIO CORREO Y CONTRASEÑA
+    public Cursor consultar1(String usu,String cor)throws SQLException{
+        Cursor mcursor1= null;
+        mcursor1=this.getReadableDatabase().query("usuarios",new String[]{"_ID","Nombre","Correo","Password"},"Nombre like '"+usu+"'and Correo like '"+cor+"'",null,null,null,null);
+
+        return mcursor1;
     }
 }
