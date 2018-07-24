@@ -55,6 +55,7 @@ public class Registrarce extends AppCompatActivity {
                 }
                 txtusu.setText("");
                 txtpas.setText("");
+                txtcor.setText("");
                 txtusu.findFocus();
             }
         });
