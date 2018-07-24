@@ -33,7 +33,7 @@
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:hint="Correo"
-            android:inputType="text" />
+            android:inputType="textEmailAddress" />
 
         <EditText
             android:id="@+id/txtPassUsu"
