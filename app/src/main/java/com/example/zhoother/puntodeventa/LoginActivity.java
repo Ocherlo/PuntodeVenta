@@ -11,11 +11,13 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.w3c.dom.Text;
+
 import OpenHelper.SQLite_OpenHelper;
 
 public class LoginActivity extends Activity {
 
-    TextView tvRegistrece;
+    TextView tvRegistrece,tvRecuPass;
     Button btnIngresar;
     SQLite_OpenHelper helper=new SQLite_OpenHelper(this,"bd1",null,1);
 
@@ -31,6 +33,16 @@ public class LoginActivity extends Activity {
                 startActivity(i);
             }
         });
+        
+        tvRecuPass=(TextView)findViewById(R.id.tvRecupePass);
+        tvRecuPass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(getApplicationContext(),Recuperar.class);
+                startActivity(i);
+            }
+        });
+
         btnIngresar= findViewById(R.id.btnIngresar);
         btnIngresar.setOnClickListener(new View.OnClickListener() {
             @Override

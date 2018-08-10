@@ -14,7 +14,7 @@ public class SQLite_OpenHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String query="create table usuarios(_ID integer primary key autoincrement,Nombre text,Correo text,Password text);";
+        String query="create table usuarios(_ID integer primary key autoincrement,Nombre text,Correo text,Password text, Pregunta text);";
         db.execSQL(query);
     }
 
@@ -28,11 +28,12 @@ public class SQLite_OpenHelper extends SQLiteOpenHelper {
     public void cerrar(){this.close();}
 
     //INSERTAR REGISTRO
-    public void insertar(String nom,String cor,String pas){
+    public void insertar(String nom,String cor,String pas, String preg){
         ContentValues valores=new ContentValues();
         valores.put("Nombre",nom);
         valores.put("Correo",cor);
         valores.put("Password",pas);
+        valores.put("Pregunta",preg);
         this.getWritableDatabase().insert("usuarios",null,valores);
     }
 

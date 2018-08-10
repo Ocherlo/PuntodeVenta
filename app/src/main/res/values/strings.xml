@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">PuntodeVenta</string>
+    <string-array name="Preguntas">
+        <item>Segundo nombre del padre</item>
+        <item>Nombre de la primer mascota</item>
+        <item>Nombre de la escuela de la infancia</item>
+        <item>Serie de televisión favorita</item>
+        <item>Nombre de su primer jefe</item>
+
+    </string-array>
+
+    <string name="selecpregun">Seleccione una pregunta de seguridad</string>
+    <string name="registrarce">REGISTRARCE</string>
+    <string name="txtselected">@string/txtselected</string>
+    <string name="enviar">SIGUIENTE</string>
+    <string name="title_activity_recuperar">Recuperar</string>
+    <string name="action_settings">Settings</string>
 </resources>

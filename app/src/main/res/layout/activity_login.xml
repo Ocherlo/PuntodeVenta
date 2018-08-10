@@ -12,15 +12,15 @@
         android:layout_height="495dp"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp">
+        tools:layout_editor_absoluteY="36dp">
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
             android:layout_gravity="center"
-            android:text="INGRESAR" />
+            android:text="INGRESAR"
+            android:textSize="20dp" />
 
         <EditText
             android:id="@+id/txtUsuario"
@@ -48,7 +48,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Registrarce"/>
+            android:text="Registrarce" />
+
+        <TextView
+            android:id="@+id/tvRecupePass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Recuperar contraseña" />
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

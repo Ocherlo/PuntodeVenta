@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Registrarce">
+    tools:context=".Registrarce"
+    tools:layout_editor_absoluteY="25dp">
 
 
     <LinearLayout
@@ -12,7 +13,7 @@
         android:layout_height="495dp"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp">
+        tools:layout_editor_absoluteY="36dp">
 
         <TextView
             android:id="@+id/textView2"
@@ -42,12 +43,29 @@
             android:hint="Contraseña"
             android:inputType="text" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/selecpregun"
+            android:layout_gravity="center"/>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/Preguntas"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="190dp">
+
+        </Spinner>
+
         <Button
             android:id="@+id/btnRegistrarUsu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:hint="Registrarce" />
+            android:hint="@string/registrarce" />
+
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

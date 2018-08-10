@@ -18,6 +18,9 @@
         </activity>
         <activity android:name=".Registrarce" />
         <activity android:name=".BasicActivity" />
+        <activity
+            android:name=".Recuperar"
+            android:label="@string/title_activity_recuperar"></activity>
     </application>
 
 </manifest>
