@@ -27,7 +27,7 @@ public class Recuperar extends Activity {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder alerta = new AlertDialog.Builder(Recuperar.this);
-                alerta.setMessage("Ejemplo").setCancelable(false).setPositiveButton("Si", new DialogInterface.OnClickListener() {
+                alerta.setMessage("Mensaje").setCancelable(false).setPositiveButton("Si", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         finish();
