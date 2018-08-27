@@ -59,6 +59,13 @@
 
         </Spinner>
 
+        <EditText
+            android:id="@+id/tvrespuesta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Respuesta"
+            android:inputType="text"/>
+
         <Button
             android:id="@+id/btnRegistrarUsu"
             android:layout_width="wrap_content"

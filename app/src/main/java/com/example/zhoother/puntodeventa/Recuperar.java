@@ -30,7 +30,8 @@ public class Recuperar extends Activity {
                 alerta.setMessage("Mensaje").setCancelable(false).setPositiveButton("Si", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        finish();
+                        Intent i=new Intent(getApplicationContext(),LoginActivity.class);
+                        startActivity(i);
                     }
                 })
                      .setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
